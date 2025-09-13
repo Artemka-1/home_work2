@@ -2,7 +2,7 @@ def total_salary(path):
     total = 0
     count = 0
     try:
-        with open(path, "r", encoding="utf-8") as f:  # path — это путь к файлу
+        with open(path, "r", encoding="utf-8") as f:
             for line in f:
                 parts = line.strip().split(",")
                 if len(parts) == 2:
@@ -20,7 +20,6 @@ def total_salary(path):
         print("Файл не найден по указанному пути.")
         return 0, 0
 
-# Путь к файлу внутри папки my1
 path = r"C:\Users\PC\Desktop\my1\home_work.txt"
 
 total, average = total_salary(path)
